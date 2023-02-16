@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>16Feb task</title>
+    </head>
+    <body>
+        <h2>Task:</h2>
+        <ul>
+            <li>Create a remote repo</li>
+            <li>Clone remote repo to local dir</li>
+            <li>Make changes to cloned repo</li>
+            <li>push modification to remote repo</li>
+            <li>fetch updated files from remote repo</li>
+        </ul>
+        <h2>Solution:</h2>
+        <ul>
+            <li>To clone project use 'git clone repo_url' ; fynd_academy repo is cloned from remote created by other user</li>
+            <li>To push changes:
+                <ul>
+                    <li>use 'git push origin branch_name' if you are collaborator</li>
+                    <li>create pull request if not collaborator, for this push to your public repo then create pull request</li>
+                </ul>
+            </li>
+            <li>To get updated changes from repo:
+                <ul>
+                    <li>use 'git fetch origin'. this will store remote commit separate to current local working tree. <br>
+                    To view local branches 'git branch'. to view remote repo 'git branch -I'</li>
+                    <li>use 'git pull origin'. This will download remote repo and auto merge to current local working tree.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
