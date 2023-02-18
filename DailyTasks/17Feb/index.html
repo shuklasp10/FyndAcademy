@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>17Feb task</title>
+    </head>
+    <body>
+        <!--Anchor tag-->
+        <h1>Anchor tag</h1>
+        <p>Anchor tag is used to create hyperlink which reference to another link at another location</p>
+        <a href="https://www.google.com" target="">Goto Google</a>
+        <!--Anchor tag attribute-->
+        <h3>Target attribute</h3>
+        <p>tells where to display the linked url</p>
+        <ul>
+            <li>_self: {default} open in same frame/window as current page. <a target="_self" href="https://www.google.com">Google</a> </li>
+            <li>_parent: opens in parent of current frame/window <a target="_parent" href="https://www.google.com">Google</a></li>
+            <li>_top: open in current window without any frame <a target="_top" href="https://www.google.com">Google</a></li>
+            <li>framename: open in specified frame <a target="frame_name" href="https://www.google.com">Google</a></li>
+            <li>_blank: open in new unamed window or tab <a target="_blank" href="https://www.google.com">Google</a></li>
+            <li>blank <a target="blank" href="https://www.google.com">Google</a></li>
+        </ul>
+        <hr>
+        <!--Unordered list-->
+        <h1>Unordered lists</h1>
+        <ul>
+            <li>this is unordered list</li>
+            <li>this is second item</li>
+        </ul>
+        <!--nested Unordered list-->
+        <h3>Nested unordered list</h3>
+        <ul>
+            <li>first list</li>
+            <li>first list is indexed with disc</li>
+            <ul>
+                <li>second nested list</li>
+                <li>second nested list is indexed with circle</li>
+                <ul>
+                    <li>third nested list</li>
+                    <li>third nested list is indexed with square</li>
+                    <ul>
+                        <li>fourth nested list</li>
+                        <li>Now squares will repeat as index</li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+        <hr>
+        <!--Ordered list-->
+        <h1>Ordered list</h1>
+        <ol>
+            <li>this is ordered list</li>
+            <li>this is second item</li>
+        </ol>
+        
+        <!--nested order list-->
+        <h3>nested ordered list</h3>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <ol>
+                <li>item 2.1</li>
+                <li>now numericals will repeat as index</li>
+            </ol>
+        </ol>
+
+        <!--type attribute in ol tag-->
+        <h3>type attribute in ordered list</h3>
+        <ol>
+            <li type="a">type="a" for lowercase letter index</li>
+            <li type="A">type="a" for uppercase letter index</li>
+            <li type="i">type="a" for lowercase roman index</li>
+            <li type="I">type="a" for uppercase roman index</li>
+            <li type="1">type="a" for numericals index</li>
+        </ol>
+        <hr>
+        <!--Description lists-->
+        <h1>Description list</h1>
+        <dl>
+            <dt>Description list</dt>
+            <dd>It is used to list terms with their description.</dd>
+
+            <dt>dt tag</dt>
+            <dd>this tag is used in dl tag to specify term which is to be defined</dd>
+
+            <dt>dd tag</dt>
+            <dd>this tag is used to give description of given term</dd>
+
+            <dt>Use case</dt>
+            <dd>Glossaries, product description, tutorials etc</dd>
+        </dl>
+    </body>
+</html>
