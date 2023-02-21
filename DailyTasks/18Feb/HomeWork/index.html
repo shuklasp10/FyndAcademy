@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>18Feb HW</title>
+    </head>
+    <body>
+        <!--nested iframes-->
+        <h2>Nested iFrame</h2>
+        <iframe src="https://bing.com" frameborder="1" width="250" height="250">
+            <iframe src="https://en.wikipedia.org/wiki/india" frameborder="0"></iframe>
+        </iframe>
+        <hr>
+        
+        <!--sandbox Attribute-->
+        <h2>Sandbox Attribute</h2>
+        <p>Sandbox is used to put restrictions on content</p>
+        <h4>Values of sandbox are:</h4>
+        <dl>
+            <dt>allow-downloads</dt>
+            <dd>allow download files</dd>
+        </dl>
+        <dl>
+            <dt>allow-download-without-user-activation</dt>
+        </dl>
+        <dl>
+            <dt>allow-forms</dt>
+        </dl>
+        <dl>
+            <dt>allow-modals</dt>
+        </dl>
+        <dl>
+            <dt>allow-orientation-lock</dt>
+        </dl>
+        <dl>
+            <dt>allow-pointer-lock</dt>
+        </dl>
+        <dl>
+            <dt>allow-popups</dt>
+        </dl>
+        <dl>
+            <dt>allow-popups-to-escape-sandbox</dt>
+        </dl>
+        <dl>
+            <dt>allow-presentation</dt>
+        </dl>
+        <dl>
+            <dt>allow-same-origin</dt>
+        </dl>
+        <dl>
+            <dt>allow-scripts</dt>
+        </dl>
+        <dl>
+            <dt>allow-storage-access-by-user-activation</dt>
+        </dl>
+        <dl>
+            <dt>allow-top-navigation</dt>
+        </dl>
+        <dl>
+            <dt>allow-top-navigation-by-user-activation</dt>
+        </dl>
+        <dl>
+            <dt>allow-top-navigation-to-custom-protocols</dt>
+        </dl>
+
+        <iframe src="https://www.bing.com" frameborder="0" sandbox="" marginwidth="130">
+            <h2>this is line inside frame</h2>
+        </iframe>
+        <hr>
+        <!--margin width & margin height-->
+        <h2>margin width</h2>
+        <ul>
+            <li><em>marginwidth</em> is used to give margin left and right of content in iFrame element. Not supported in HTML5</li>
+            <li><em>marginheight</em> is used to give top and bottom margin to content in iframe</li>
+        </ul>
+        <iframe src="https://www.bing.com" frameborder="1"></iframe>
+    </body>
+</html>
+
+<!--
+    srcdoc
+-->
