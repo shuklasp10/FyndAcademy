@@ -1,0 +1,98 @@
+<!--
+    Subject - HTML, css, javacript, react, node
+    check rowgroup
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Time Table</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <table border="2px">
+            <caption>Study Time Table</caption>
+            <colgroup>
+            <col style="background-color: aqua;">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col span="2" style="background-color: red;">
+            </colgroup>
+            
+            <thead style="background-color: aqua;">
+                <tr>
+                    <th>Day/Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00-10:00</td>
+                    <td style="background-color: yellow;">HTML</td>
+                    <td style="background-color: yellow;">HTML</td>
+                    <td style="background-color: yellow;">HTML</td>
+                    <td style="background-color: orange;">CSS</td>
+                    <td style="background-color: orange;">CSS</td>
+                    <td rowspan="7">Weekend Off</td>
+                    <td rowspan="7">Weekend Off</td>
+
+                </tr>
+                <tr>
+                    <td>10:30-11:30</td>
+                    <td style="background-color: #9cbcf4;">javacript</td>
+                    <td style="background-color: #9cbcf4;">javacript</td>
+                    <td style="background-color: #9cbcf4;">javacript</td>
+                    <td style="background-color: orange;">CSS</td>
+                    <td style="background-color: orange;">CSS</td>
+                </tr>
+                <tr>
+                    <td>10:30-11:30</td>
+                    <td style="background-color: #c787e0;">React</td>
+                    <td style="background-color: #c787e0;">React</td>
+                    <td style="background-color: #c787e0;">React</td>
+                    <td style="background-color: hsl(170, 56%, 70%);">Data Structure</td>
+                    <td style="background-color: hsl(170, 56%, 70%);">Data Structure</td>
+                </tr>
+                <tr >
+                    <td>11:30-12:00</td>
+                    <td colspan="5" style="background-color: greenyellow;"><Center>BREAK</Center></td>
+                </tr>
+                <tr>
+                    <td>12:00-13:00</td>
+                    <td style="background-color: hwb(88 65% 5%);">Node</td>
+                    <td style="background-color: hwb(88 65% 5%);">Node</td>
+                    <td style="background-color: hwb(88 65% 5%);">Node</td>
+                    <td style="background-color: hsl(170, 56%, 70%);">Data Structure</td>
+                    <td style="background-color: hsl(170, 56%, 70%);">Data Structure</td>
+                </tr>
+                <tr>
+                    <td>13:30-14:30</td>
+                    <td style="background-color: hwb(151 65% 23%);">Git</td>
+                    <td style="background-color: hwb(151 65% 23%);">Git</td>
+                    <td style="background-color: hwb(151 65% 23%);">Git</td>
+                    <td style="background-color: hwb(151 65% 23%);">Git</td>
+                    <td style="background-color: hwb(151 65% 23%);">Git</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>15:00-17:00</td>
+                    <td colspan="5" style="background-color: beige;">Project Building</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
