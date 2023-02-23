@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <style>
+        .class1 {
+            background-color: red;
+        }
+
+        p {
+            background-color: aqua;
+        }
+
+        #id1 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        empty action will refresh page.
+        action="#" is included rather than keeping it empty for easy testing
+        target attr can be used in form tag
+        method="get" used to request (query) data from resource, exposes submitted data
+                        cached, remain in browser history, 
+        method="post" used to send data to server. not cached, not in history
+    -->
+    <form action="./action.html" target="_blank" method="get">
+        <!--"for" attr relates to name of input-->
+        <label for="fname">first name</label>
+        <input type="text" id="fname" name="fname" placeholder="enter your first name"><br>
+        <label for="lname">last name</label>
+        <!--value is used to give pre-filled data-->
+        <input type="text" id="lname" name="lname" value="shukla"><br>
+        <label for="phone">Phone No</label>
+        <!--number will accept 'e' as eponential-->
+        <input type="number" id="phone" name="phone"><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br>
+        <input type="date">
+        <input type="time">
+        <label for="gender">male</label>
+        <input type="radio" name="gender" id="gender">
+        <label for="gender">female</label>
+        <input type="radio" name="gender" id="gender">
+        <!--type submit create button which execute action attr of form tag-->
+        <input type="submit" value="click me">
+        <input type="reset" value="reset">
+    </form>
+    <!--
+        class => classname is used to group tag for styling
+        provide classname a meaningfull name
+        can be selected using '.'
+    -->
+    <p class="class1">this is class1 tag1</p>
+    <p class="class1">this is class1 tag2</p>
+    <p class="class1">this is class1 tag3</p>
+    <p>this is without class</p>
+    <!--
+        id => id is unique for a element used to give specific styling to a element
+        selected using '#'
+        in styling we can group by id but not recommended
+        used to get specific data from form inputs.
+    -->
+    <p id="id1">this is id tag 1</p>
+    <p id="id1">this is id tag 2</p>
+</body>
+
+</html>
+
+<!--
+    change password dot type
+    other tags
+    html project: navigation within the page
+    make two p tag in same line
+-->
