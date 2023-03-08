@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		img {
+			margin: 10px;
+			border: 1px solid black;
+			padding: 10px;
+			width: 195px;
+			height: 195px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+		}
+        .pets{
+            border: 3px dotted red;
+        }
+        .nature{
+            border: 3px dashed blue;
+            
+        }
+        .people{
+            border: 3px groove green;
+            
+        }
+        .food{
+            border: 3px double  yellowgreen;
+
+        }
+        .petsPeople{
+            border-top: 3px dotted red ;
+            border-left: 3px dotted red ;
+            border-bottom: 3px solid black;
+            border-right: 3px solid black;
+        }
+        .foodNature{
+            border-top: 3px double green ;
+            border-left: 3px double green ;
+            border-bottom: 3px dashed blue;
+            border-right: 3px dashed blue;
+        }
+        .petsNature{
+            border-top: 3px dotted red ;
+            border-left: 3px dotted red ;
+            border-bottom: 3px dashed blue;
+            border-right: 3px dashed blue;
+            
+        }
+        .foodPeople{
+            border-top: 3px double green ;
+            border-left: 3px double green ;
+            border-bottom: 3px solid black;
+            border-right: 3px solid black;
+            
+        }
+        .all{
+            border-top: 3px double green ;
+            border-bottom: 3px solid black;
+            border-right: 3px dashed blue;
+            border-left: 3px dotted red ;
+            
+        }
+	</style>
+</head>
+<body>
+	<h1>Gallery</h1>
+	<div class="container">
+        <img class="pets" src=".././assets/pet.jpg" alt="Pets" title="pets">
+        <img class="food" src=".././assets/food.jpg" alt="food" title="food">
+        <img class="nature" src=".././assets/Nature.jpg" alt="nature" title="nature">
+        <img class="people" src=".././assets/people.jpg" alt="people" title="people">
+        <img class="petsPeople" src=".././assets/petsPeople.jpg" alt="Pets & people" title="pets & people">
+        <img class="foodNature" src=".././assets/foodNature.jpg" alt="Food & nature" title="food & nature">
+        <img class="petsNature" src=".././assets/petsNature.jpg" alt="Pets & Nature" title="pets & nature">
+        <img class="foodPeople" src=".././assets/foodPeople.webp" alt="Food & People" title="food & people">
+        <img class="all" src=".././assets/all.jpg" alt="Food & People & Nature & Pets" title="pets, poeple, food & nature">
+	</div>
+</body>
+</html>
