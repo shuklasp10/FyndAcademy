@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>9 mar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        .parent {
+            border: 2px solid black;
+            background-color: aquamarine;
+        }
+
+        .margin {
+            border: 1px solid blue;
+            background-color: yellow;
+            margin: 30px;
+        }
+
+        .padding {
+            border: 1px solid blue;
+            background-color: yellow;
+            padding: 30px;
+        }
+
+        .bgclip1 {
+            margin: 5px;
+            border: 9px dotted blue;
+            background-color: yellow;
+            background-clip: border-box;
+        }
+
+        .bgclip2 {
+            margin: 10 px;
+            padding: 5px;
+            border: 9px dotted blue;
+            background-color: yellow;
+            background-clip: padding-box;
+        }
+
+        .bgclip3 {
+            margin: 10px;
+            padding: 5px;
+            border: 9px dotted blue;
+            background-color: yellow;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Margin & Padding</h1>
+    <div class="parent">
+        <div class="margin">margin give space around the element</div>
+        <div class="padding">padding give space inside element around the content</div>
+    </div>
+    <hr style="margin-top:30px;">
+    <h1>background-clip</h1>
+    <div class="parent">
+        <div>background-clip specify how far the background should extend within an element</div>
+        <div class="bgclip1">default value: border-box; bg extend behind border</div>
+        <div class="bgclip2">padding-box; extend to inside edge of border</div>
+        <div class="bgclip3">content-box; extend to edge of content only</div>
+    </div>
+    <hr>
+    <h1>Opacity</h1>
+    <div class="parent" style="opacity: 0;">This will be not seen</div>
+    <div class="parent" style="opacity: 0.2;">Opacity specify the opacity of an element</div>
+    <div class="parent" style="opacity: 0.4;">Opacity value range from 0 to 1</div>
+    <div class="parent" style="opacity: 0.8;">0 value means transparent; not visible</div>
+    <div class="parent" style="opacity: 1;">1 value means opaque; fully visible</div>
+    <div class="parent"> alpha value in hsla and rgba does not fade element content only apply to color, whereas opacity
+        applies to both bg and content</div>
+    <hr>
+    <h1>background image</h1>
+    <div>background-size property will determine size of bg image</div>
+    <div>background-repeat: no-repeat; will not repeat image in order to fill bg. By default it will repeat</div>
+    <div>background-attachment: set bg according to page</div>
+    <hr>
+    <h1>Position</h1>
+    <div>
+         <a href="./position.html">Click here for position</a>
+    </div> 
+</body>
+
+</html>
+
+<!-- 
+    margin and padding left right top bottom
+    difference in bg clip and bg orgin
+    transparent and opacity difference
+    apply background image to body.
+        apply repeat x and repat y
+        can we control height and width to body
+        can we resize background in body
+ -->
